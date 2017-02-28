@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe "authors_controller/new.html.erb", type: :view do
-  pending "add some examples to (or delete) #{__FILE__}"
+  render
+  describe "new" do
+    it "renders the page" do
+      get page
+    end
+  end
 end
